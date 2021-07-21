@@ -91,7 +91,3 @@ class MemoryBlock:
 					else: running_index = self.loop_navigation(code[running_index:])+running_index
 				running_index += 1
 			if loop == False: print(f"{tags['out']} Program output:\n{self.output}")
-
-hello_world = Brainfuck(",>,.<.").parse()
-memory = MemoryBlock()
-memory.execute_code(hello_world)
